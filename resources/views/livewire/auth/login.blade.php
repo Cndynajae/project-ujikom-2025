@@ -65,10 +65,9 @@
         </div>
 
         <!-- Bagian Gambar -->
-        <div class="hidden lg:block lg:w-[60%]">
-            <img src="img/foto-industri.jpg" alt="tidak ada foto"
-                class="h-full w-full object-cover"
-                style="height: 97vh; background-image: url('img/foto-industri.jpg'); background-size: cover; background-position: center;">
+        <div class="hidden lg:block lg:w-[60%] relative bg-cover bg-center bg-opacity-20"
+            style="background-image: url('img/foto-industri.jpg');">
+            <div class="absolute inset-0 bg-white opacity-30"></div> <!-- Layer Transparan -->
         </div>
     </div>
 </div>
