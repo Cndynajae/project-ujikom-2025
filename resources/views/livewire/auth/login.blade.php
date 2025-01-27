@@ -65,9 +65,9 @@
         </div>
 
         <!-- Bagian Gambar -->
-        <div class="hidden lg:block lg:w-[60%] relative bg-cover bg-center bg-opacity-20"
+        <div class="hidden lg:block lg:w-[60%] relative bg-cover bg-center"
             style="background-image: url('img/foto-industri.jpg');">
-            <div class="absolute inset-0 bg-white opacity-30"></div> <!-- Layer Transparan -->
+            <!-- Lapisan transparan telah dihapus -->
         </div>
     </div>
 </div>
