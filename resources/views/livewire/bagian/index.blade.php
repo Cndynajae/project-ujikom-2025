@@ -111,12 +111,12 @@
                                                     stroke-linejoin="round" stroke-width="2"
                                                     d="M10 11V6m0 8h.01M19 10a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                                             </svg>
-                                            <h3 class="text-lg font-bold">Apakah anda mau menghapus bagian ini?</h3>
+                                            <h3 class="text-lg font-bold">Do you want to delete this bagian?</h3>
                                             <div class="modal-action">
                                                 <button
                                                     class="btn bg-red-500 text-white hover:bg-red-600 dark:bg-red-600 dark:hover:bg-red-700 border-none"
                                                     wire:click="destroy({{ $bagian->id }})">
-                                                    Delete
+                                                    Ya, Delete
                                                 </button>
                                                 <button class="btn hover:bg-gray-900 dark:bg-gray-700 dark:text-white"
                                                     onclick="my_modal_{{ $bagian->id }}.close()">

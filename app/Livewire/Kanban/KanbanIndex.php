@@ -2,6 +2,7 @@
 
 namespace App\Livewire\Kanban;
 
+
 use App\Models\Priorities;
 use App\Models\Project;
 use App\Models\Tasks;

@@ -101,6 +101,8 @@
         </div>
     </div>
 
+    
+
     <div class="flex space-x-4">
         @foreach ($statuses as $status)
             <!-- Kontainer Status -->

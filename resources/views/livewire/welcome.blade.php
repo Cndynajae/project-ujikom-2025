@@ -22,7 +22,7 @@
                 <!-- Card Sambutan untuk User, tepat di bawah jam digital -->
                 <div class="mt-4 bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
                     <p class="text-2xl text-gray-800 dark:text-gray-200">
-                        Selamat datang di halaman dashboard,
+                        Welcome to the dashboard page,
                         <span class="text-blue-500 font-semibold">{{ Auth::user()->name }}</span>!
                     </p>
                 </div>
@@ -43,7 +43,7 @@
 
             <!-- Kalender Card tetap di sebelah jam digital -->
             <div class="w-1/2">
-                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
+                {{-- <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
                     <!-- Navigasi Kalender -->
                     <div class="flex items-center justify-between mb-4">
                         <button wire:click="changeMonth(-1)" class="px-4 py-2 bg-gray-200 dark:bg-gray-700 rounded-md">
@@ -77,7 +77,8 @@
                             @endforeach
                         @endforeach
                     </div>
-                </div>
+                </div> --}}
+                @livewire('google-calendar')
             </div>
         </div>
 

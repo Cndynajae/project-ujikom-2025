@@ -66,8 +66,8 @@
             <svg class="mx-auto mb-4 text-gray-400 w-20 h-20 dark:text-gray-200" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 11V6m0 8h.01M19 10a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
             </svg>
-            <h3 class="text-lg font-bold">Apakah Anda yakin ingin mengganti password?</h3>
-            <small class="text-sm text-gray-500"><i>*Ini akan membawa anda ke halaman login jika yakin</i></small>
+            <h3 class="text-lg font-bold">Are you sure you want to change your password?</h3>
+            <small class="text-sm text-gray-500"><i>*This will take you to the login page if you are sure</i></small>
             <div class="modal-action">
                 <button wire:click="updatePassword" class="btn bg-indigo-600 text-white hover:bg-indigo-700 border-none">
                     Ya, Change Password

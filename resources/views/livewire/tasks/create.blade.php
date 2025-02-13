@@ -74,13 +74,21 @@
 
             <!-- Status -->
             <label for="status_id" class="block text-sm mt-4">Status</label>
-            <select wire:model="status_id" id="status_id"
+            {{-- <select wire:model="status_id" id="status_id"
                 class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray text-black">
                 <option value="">Choose Status</option>
                 @foreach ($statuses as $status)
                     <option value="{{ $status->id }}">{{ $status->name }}</option>
                 @endforeach
+            </select> --}}
+            <select wire:model="status_id" id="status_id"
+                class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray text-black">
+                <option value="">Choose Status</option>
+                @foreach ($statuses as $status)
+                    <option value="{{ (int) $status->id }}">{{ $status->name }}</option>
+                @endforeach
             </select>
+
             @error('status_id')
                 <span class="text-red-500 text-sm">{{ $message }}</span>
             @enderror
@@ -112,26 +120,26 @@
             @enderror
 
             <!-- Start Date -->
-<label class="block text-sm mt-4">
-    <span class="text-gray-700 dark:text-gray-400">Start Date</span>
-    <input
-        class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input text-black"
-        type="date" wire:model="start_date" />
-    @error('start_date')
-        <span class="text-red-500 text-sm">{{ $message }}</span>
-    @enderror
-</label>
+            <label class="block text-sm mt-4">
+                <span class="text-gray-700 dark:text-gray-400">Start Date</span>
+                <input
+                    class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input text-black"
+                    type="date" wire:model="start_date" />
+                @error('start_date')
+                    <span class="text-red-500 text-sm">{{ $message }}</span>
+                @enderror
+            </label>
 
-<!-- End Date -->
-<label class="block text-sm mt-4">
-    <span class="text-gray-700 dark:text-gray-400">End Date</span>
-    <input
-        class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input text-black"
-        type="date" wire:model="end_date" />
-    @error('end_date')
-        <span class="text-red-500 text-sm">{{ $message }}</span>
-    @enderror
-</label>
+            <!-- End Date -->
+            <label class="block text-sm mt-4">
+                <span class="text-gray-700 dark:text-gray-400">End Date</span>
+                <input
+                    class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input text-black"
+                    type="date" wire:model="end_date" />
+                @error('end_date')
+                    <span class="text-red-500 text-sm">{{ $message }}</span>
+                @enderror
+            </label>
 
 
             <!-- Priority -->

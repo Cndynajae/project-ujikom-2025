@@ -1,7 +1,5 @@
-<div class="flex justify-center items-center min-h-screen bg-gray-50">
-    <!-- Container -->
+<div class="flex justify-center items-center min-h-screen bg-gray-50"> 
     <div class="flex flex-col lg:flex-row bg-white shadow-lg rounded-lg overflow-hidden w-full max-w-5xl">
-        <!-- Bagian Form Login -->
         <div class="flex flex-col justify-center px-8 py-12 lg:px-12 w-full max-w-lg">
             <div class="sm:mx-auto sm:w-full sm:max-w-sm">
                 <img class="mx-auto h-12 w-auto" src="img/logo-intra-new.svg" alt="Logo Intra">
@@ -45,10 +43,8 @@
                             <button type="button" wire:click="togglePassword"
                                 class="absolute inset-y-0 right-0 flex items-center pr-3">
                                 @if ($showPassword)
-                                    <!-- Icon Mata Terbuka -->
                                     <i class='bx bxs-show'></i>
                                 @else
-                                    <!-- Icon Mata Tertutup -->
                                     <i class='bx bxs-hide'></i>
                                 @endif
                             </button>
@@ -64,10 +60,8 @@
             </div>
         </div>
 
-        <!-- Bagian Gambar -->
         <div class="hidden lg:block lg:w-[60%] relative bg-cover bg-center"
             style="background-image: url('img/foto-industri.jpg');">
-            <!-- Lapisan transparan telah dihapus -->
         </div>
     </div>
 </div>

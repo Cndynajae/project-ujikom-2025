@@ -68,7 +68,7 @@
             @error('email')
                 <span class="text-red-500">{{ $message }}</span>
             @enderror
-            <small><i>*jika password lupa, lapor kepada admin intra-sub</i></small>
+            <small><i>*If you forget your password, report it to the intra-sub admin</i></small>
         </div>
 
         <button type="submit"

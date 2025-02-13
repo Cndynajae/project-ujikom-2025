@@ -78,18 +78,18 @@
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                         stroke-width="2" d="M10 11V6m0 8h.01M19 10a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                                 </svg>
-                                <h3 class="text-lg font-bold">Apakah Anda yakin ingin keluar?</h3>
+                                <h3 class="text-lg font-bold">Are you sure you want to logout?</h3>
                                 <div class="modal-action">
                                     <form action="{{ route('logout') }}" method="POST">
                                         @csrf
                                         <button type="submit"
                                             class="btn bg-red-500 text-white hover:bg-red-600 dark:bg-red-600 dark:hover:bg-red-700 border-none">
-                                            Ya, Keluar
+                                            Ya, logout
                                         </button>
                                     </form>
-                                    <button class="btn hover:bg-gray-900 dark:bg-gray-700 dark:text-white"
+                                    <button class="btn hover:bg-white-900 dark:bg-black-700 dark:text-black"
                                         onclick="document.getElementById('logout-modal').close()">
-                                        Batal
+                                        cancel
                                     </button>
                                 </div>
                             </div>
