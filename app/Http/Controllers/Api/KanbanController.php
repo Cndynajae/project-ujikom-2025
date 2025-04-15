@@ -13,7 +13,7 @@ class KanbanController extends Controller
      */
     public function index()
     {
-        $task = Tasks::latest()->get();
+        $task = Tasks::with(['owner', 'responsible', 'status', 'project', 'type', 'priority'])->latest()->get();
         return response()->json([
             'success' => true,
             'message' => 'Data Task',
