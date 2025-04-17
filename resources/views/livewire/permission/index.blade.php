@@ -106,15 +106,14 @@
                                                     stroke-linejoin="round" stroke-width="2"
                                                     d="M10 11V6m0 8h.01M19 10a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                                             </svg>
-                                            <h3 class="text-lg font-bold">Do you want to delete this role?</h3>
+                                            <h3 class="text-lg font-bold"><center>Do you want to delete this role?</center></h3>
                                             <div class="modal-action">
                                                 <button
-                                                    class="btn bg-red-500 text-white hover:bg-red-600 dark:bg-red-600 dark:hover:bg-red-700"
+                                                    class="btn bg-purple-500 text-white hover:bg-purple-600 dark:bg-purple-600 dark:hover:bg-purple-700"
                                                     wire:click="destroy({{ $permission->id }})">
                                                     Ya, Delete
                                                 </button>
-                                                <button
-                                                    class="btn hover:bg-gray-900 dark:bg-gray-700 dark:text-white"
+                                                <button class="btn hover:bg-white-900 dark:bg-gray-700 dark:text-black"
                                                     onclick="my_modal_{{ $permission->id }}.close()">
                                                     Cancel
                                                 </button>

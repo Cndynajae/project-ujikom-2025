@@ -28,47 +28,45 @@
                         </div>
                     </button>
                     <template x-if="isProfileMenuOpen">
-                        <ul x-transition:leave="transition ease-in duration-150"
-    x-transition:leave-start="opacity-100"
-    x-transition:leave-end="opacity-0"
-    @click.away="closeProfileMenu"
-    @keydown.escape="closeProfileMenu"
-    class="absolute right-0 w-56 p-2 mt-2 space-y-2 text-gray-600 bg-white border border-gray-100 rounded-md shadow-md dark:border-gray-700 dark:text-gray-300 dark:bg-gray-700 z-50"
-    aria-label="submenu">
-    <li class="flex">
-        <a class="inline-flex items-center w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-800 dark:hover:text-gray-200"
-            href="{{ route('profile.edit') }}">
-            <svg class="w-5 h-5 mr-2" aria-hidden="true" fill="currentColor"
-                viewBox="0 0 22 22">
-                <path
-                    d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z">
-                </path>
-            </svg>
-            <span>Edit Profile</span>
-        </a>
-    </li>
-    <li class="flex">
-        <a class="inline-flex items-center w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-800 dark:hover:text-gray-200"
-            href="{{ route('change-password') }}">
-            <i class='bx bxs-lock' style="font-size: 16px;"></i>
-            <span class="ml-2">Change Password</span>
-        </a>
-    </li>
-    <li class="flex">
-        <button
-            class="inline-flex items-center w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-800 dark:hover:text-gray-200"
-            @click="document.getElementById('logout-modal').showModal()">
-            <svg class="w-4 h-4 mr-3" aria-hidden="true" fill="none" stroke-linecap="round"
-                stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path
-                    d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1">
-                </path>
-            </svg>
-            <span>Log out</span>
-        </button>
-    </li>
-</ul>
+                        <ul x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100"
+                            x-transition:leave-end="opacity-0" @click.away="closeProfileMenu"
+                            @keydown.escape="closeProfileMenu"
+                            class="absolute right-0 w-56 p-2 mt-2 space-y-2 text-gray-600 bg-white border border-gray-100 rounded-md shadow-md dark:border-gray-700 dark:text-gray-300 dark:bg-gray-700 z-50"
+                            aria-label="submenu">
+                            <li class="flex">
+                                <a class="inline-flex items-center w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-800 dark:hover:text-gray-200"
+                                    href="{{ route('profile.edit') }}">
+                                    <svg class="w-5 h-5 mr-2" aria-hidden="true" fill="currentColor"
+                                        viewBox="0 0 22 22">
+                                        <path
+                                            d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z">
+                                        </path>
+                                    </svg>
+                                    <span>Edit Profile</span>
+                                </a>
+                            </li>
+                            <li class="flex">
+                                <a class="inline-flex items-center w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-800 dark:hover:text-gray-200"
+                                    href="{{ route('change-password') }}">
+                                    <i class='bx bxs-lock' style="font-size: 16px;"></i>
+                                    <span class="ml-2">Change Password</span>
+                                </a>
+                            </li>
+                            <li class="flex">
+                                <button
+                                    class="inline-flex items-center w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-800 dark:hover:text-gray-200"
+                                    @click="document.getElementById('logout-modal').showModal()">
+                                    <svg class="w-4 h-4 mr-3" aria-hidden="true" fill="none" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                                        stroke="currentColor">
+                                        <path
+                                            d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1">
+                                        </path>
+                                    </svg>
+                                    <span>Log out</span>
+                                </button>
+                            </li>
+                        </ul>
 
                         <dialog id="logout-modal" class="modal fixed inset-0 flex items-center justify-center">
                             <div class="modal-box bg-white text-gray-800 dark:bg-gray-800 dark:text-white p-4 md:p-5">
@@ -83,7 +81,7 @@
                                     <form action="{{ route('logout') }}" method="POST">
                                         @csrf
                                         <button type="submit"
-                                            class="btn bg-red-500 text-white hover:bg-red-600 dark:bg-red-600 dark:hover:bg-red-700 border-none">
+                                            class="btn bg-indigo-500 text-white hover:bg-indigo-600 dark:bg-indigo-600 dark:hover:bg-indigo-700 border-none">
                                             Ya, logout
                                         </button>
                                     </form>
