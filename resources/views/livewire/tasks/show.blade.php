@@ -47,7 +47,7 @@
                         <td class="px-6 py-4 whitespace-nowrap text-black-600 dark:text-black-400">
                             {{ $task->responsible->name ?? 'N/A' }}
                         </td>
-                    </tr>z
+                    </tr>
                     <tr>
                         <td class="px-6 py-4 whitespace-nowrap text-black-600 dark:text-black-400">
                             <strong>Status:</strong>
