@@ -18,7 +18,7 @@
         <div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
             <!-- Task Name -->
             <label class="block text-sm">
-                <span class="text-gray-700 dark:text-gray-400">Task Nama</span>
+                <span class="text-gray-700 dark:text-gray-400">Task Name</span>
                 <input
                     class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input text-black"
                     placeholder="Edit task name" wire:model="name" />
@@ -57,10 +57,10 @@
 
 
             <!-- Owner -->
-            <label for="owner_id" class="block text-sm mt-4">Pemilik</label>
+            <label for="owner_id" class="block text-sm mt-4">Owners</label>
             <select wire:model="owner_id" id="owner_id"
                 class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray text-black">
-                <option value="">Pemilik</option>
+                <option value="">Owners</option>
                 @foreach ($users as $user)
                     <option value="{{ $user->id }}">{{ $user->name }}</option>
                 @endforeach
